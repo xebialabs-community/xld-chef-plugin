@@ -1,0 +1,18 @@
+<!--
+
+    THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS
+    FOR A PARTICULAR PURPOSE. THIS CODE AND INFORMATION ARE NOT SUPPORTED BY XEBIALABS.
+
+-->
+<synthetic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.xebialabs.com/deployit/synthetic" xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd">
+
+    <!-- For deploying/undeploying the files, and executing script with all of commands  -->
+  <type type="chef.AppliedCookbook" deployable-type="chef.Cookbook" container-type="overthere.Host" extends="udm.BaseDeployedArtifact">
+    <generate-deployable type="chef.Cookbook" extends="udm.BaseDeployableFileArtifact" />
+
+    <property name="recipe" hidden="false" description="Recipe to deploy"/>
+  </type>
+
+</synthetic>
