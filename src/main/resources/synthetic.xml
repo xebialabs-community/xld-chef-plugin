@@ -28,6 +28,6 @@
     <generate-deployable type="chef.KnifeClientCommands" extends="udm.BaseDeployable" />
 	<property name="commands" hidden="false" description="Knife commands to execute" size="large"/>    
   </type>
-  
+
 
 </synthetic>

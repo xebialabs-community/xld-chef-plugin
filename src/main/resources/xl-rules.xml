@@ -44,7 +44,6 @@
            <os-script>
              <order>10</order>
              <script>chef/runChefKnifeCommands</script>
-             <order>71</order>
            </os-script>
         </steps>
     </rule>
@@ -58,7 +57,6 @@
            <os-script>
              <order>20</order>
              <script>chef/runChefKnifeCommands</script>
-             <order>71</order>
            </os-script>
         </steps>
     </rule>
