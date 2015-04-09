@@ -21,5 +21,45 @@
            </os-script>
         </steps>
     </rule>
-
+    <rule name="chef.AppliedKnifeCookbook.CREATE_MODIFY" scope="deployed">
+        <conditions>
+            <type>chef.AppliedKnifeCookbook</type>
+            <operation>CREATE</operation>
+            <operation>MODIFY</operation>
+        </conditions>
+        <steps>
+           <os-script>
+             <script>chef/applyChefKnifeCookbook</script>
+             <order>71</order>
+           </os-script>
+        </steps>
+    </rule>
+    <rule name="chef.DeployedKnifeCommands.CREATE_MODIFY" scope="deployed">
+        <conditions>
+            <type>chef.DeployedKnifeCommands</type>
+            <operation>CREATE</operation>
+            <operation>MODIFY</operation>
+        </conditions>
+        <steps>
+           <os-script>
+             <order>10</order>
+             <script>chef/runChefKnifeCommands</script>
+             <order>71</order>
+           </os-script>
+        </steps>
+    </rule>
+    <rule name="chef.DeployedKnifeClientCommands.CREATE_MODIFY" scope="deployed">
+        <conditions>
+            <type>chef.DeployedKnifeClientCommands</type>
+            <operation>CREATE</operation>
+            <operation>MODIFY</operation>
+        </conditions>
+        <steps>
+           <os-script>
+             <order>20</order>
+             <script>chef/runChefKnifeCommands</script>
+             <order>71</order>
+           </os-script>
+        </steps>
+    </rule>
 </rules>
