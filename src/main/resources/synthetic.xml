@@ -28,6 +28,9 @@
     <generate-deployable type="chef.KnifeClientCommands" extends="udm.BaseDeployable" />
 	<property name="commands" hidden="false" description="Knife commands to execute" size="large"/>    
   </type>
+  <type type="chef.AppliedJson" deployable-type="chef.JsonArtifact" container-type="chef.Node" extends="udm.BaseDeployedArtifact">
+    <generate-deployable type="chef.JsonArtifact" extends="udm.BaseDeployableFileArtifact" />
+  </type>
 
 
 </synthetic>

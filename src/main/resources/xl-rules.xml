@@ -60,4 +60,17 @@
            </os-script>
         </steps>
     </rule>
+    <rule name="chef.DeployedJson.CREATE_MODIFY" scope="deployed">
+        <conditions>
+            <type>chef.AppliedJson</type>
+            <operation>CREATE</operation>
+            <operation>MODIFY</operation>
+        </conditions>
+        <steps>
+           <os-script>
+             <order>20</order>
+             <script>chef/applyjson</script>
+           </os-script>
+        </steps>
+    </rule>
 </rules>
