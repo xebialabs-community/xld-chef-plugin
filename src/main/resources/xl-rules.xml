@@ -24,6 +24,7 @@
     <rule name="chef.AppliedKnifeCookbook.CREATE_MODIFY" scope="deployed">
         <conditions>
             <type>chef.AppliedKnifeCookbook</type>
+            <type>chef.AppliedKnifeCookbookFiles</type>
             <operation>CREATE</operation>
             <operation>MODIFY</operation>
         </conditions>

@@ -6,6 +6,17 @@
 
 -->
 #!/bin/bash
+echo ${deployed.file.name}
+filelist=${deployed.file.name}
+if [ -d ${deployed.file.name} ]
+then
+ filelist=""
+ for files in `ls ${deployed.file.name}`
+  do
+   filelist="$filelist $files"
+  done
+fi
+echo $filelist
 
 echo Uploading knife cookbook ${deployed.file.name}
-knife cookbook upload --cookbook-path ${deployed.file.name} ${deployed.cookbookName}
+echo knife cookbook upload --cookbook-path $filelist ${deployed.cookbookName}

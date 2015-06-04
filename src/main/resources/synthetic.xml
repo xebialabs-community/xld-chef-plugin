@@ -24,6 +24,10 @@
     <generate-deployable type="chef.KnifeCookbook" extends="udm.BaseDeployableFileArtifact" />
 	<property name="cookbookName" hidden="false" description="Name of the cookbook"/>    
   </type>
+  <type type="chef.AppliedKnifeCookbookFiles" deployable-type="chef.KnifeCookbookFiles" container-type="chef.Server" extends="udm.BaseDeployedArtifact">
+    <generate-deployable type="chef.KnifeCookbookFiles" extends="udm.BaseDeployableFolderArtifact" />
+  <property name="cookbookName" hidden="false" description="Name of the cookbook"/>    
+  </type>
   <type type="chef.DeployedKnifeClientCommands" deployable-type="chef.KnifeClientCommands" container-type="chef.Node" extends="udm.BaseDeployed">
     <generate-deployable type="chef.KnifeClientCommands" extends="udm.BaseDeployable" />
 	<property name="commands" hidden="false" description="Knife commands to execute" size="large"/>    
