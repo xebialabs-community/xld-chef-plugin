@@ -1,2 +1,8 @@
 language: java
-
+deploy:
+  provider: releases
+  api_key:
+    secure: Eas0STRjZMo8RJpj7OFHprabyTI1QzkjoQ05SxhFALa4qSeGFIX/HCK6kSoFsrd1jkJwipaNRkAJVdW1flhGTqXOKaionOiMa0bxFTu8Qc/oEW0bnlbmqBpzLr/W3lOuBhh5LPboDCEvSGjXPGRiVyYm4kgDSGmIpzZ8Cm7hRWU=
+  file: build/libs/xld-chef-plugin-4.5.0.jar
+  on:
+    repo: xebialabs-community/xld-chef-plugin
