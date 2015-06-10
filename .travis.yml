@@ -3,6 +3,12 @@ deploy:
   provider: releases
   api_key:
     secure: Eas0STRjZMo8RJpj7OFHprabyTI1QzkjoQ05SxhFALa4qSeGFIX/HCK6kSoFsrd1jkJwipaNRkAJVdW1flhGTqXOKaionOiMa0bxFTu8Qc/oEW0bnlbmqBpzLr/W3lOuBhh5LPboDCEvSGjXPGRiVyYm4kgDSGmIpzZ8Cm7hRWU=
-  file: build/libs/xld-chef-plugin-4.5.0.jar
+  file: build/libs/xld-chef-plugin-4.5.3.jar
   on:
+    all_branches: true
+    tags: true
     repo: xebialabs-community/xld-chef-plugin
+notifications:
+  hipchat:
+    rooms:
+      secure: DLIt0iHzhSE1+82L9a6api03BUvBcZQrbpTu3U+ZS12r+rWb/a4m7ojquX8+o5f4UMdPln2Rv+vGggUTi5l4RXNWZ+n8PAb/CQNVmepE1TPyB6DJCXCdTjkIAajD068CadCTtkENMditFj7XGIe94/RI7rVB/nYPnJGbAFKvY68=
