@@ -30,3 +30,7 @@ _NOTE:_ To Use dicitionary substitution with this plugin in the Chef manifest fi
 `udm.BaseDeployableArchiveArtifact.scanPlaceholders=true
 udm.BaseDeployableArchiveArtifact.textFileNamesRegex=.+\.(cfg | conf | config | ini | properties | props | txt | rb)
 `
+
+# Windows #
+
+In order to deploy a chef.Cookbook to a Windows host, TarTool is required to be installed on the target and available on the default PATH. TarTool can be downloaded from https://tartool.codeplex.com
