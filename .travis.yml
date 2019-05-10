@@ -2,7 +2,7 @@ language: java
 deploy:
   provider: releases
   api_key:
-    secure: Eas0STRjZMo8RJpj7OFHprabyTI1QzkjoQ05SxhFALa4qSeGFIX/HCK6kSoFsrd1jkJwipaNRkAJVdW1flhGTqXOKaionOiMa0bxFTu8Qc/oEW0bnlbmqBpzLr/W3lOuBhh5LPboDCEvSGjXPGRiVyYm4kgDSGmIpzZ8Cm7hRWU=
+    secure: X6Ph7SJ9OiJiyahwNDAmN0layt+ZbQ5axEMwKzfZhH6t+L9cioEhZNlnG0L/WJnMviD6e/5MCAwLPZ3MYoB0ZqacLYFJtKwgQ81QQ9gDXxtvL4mI5KyUb2FDTqrWeZEGNINbY9SQHx5DWyN9ZCwazUqBhbra2wCVWLRwc+uxrkI=
   file: build/libs/xld-chef-plugin-4.5.3.jar
   on:
     all_branches: true
