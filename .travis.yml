@@ -9,6 +9,5 @@ deploy:
     tags: true
     repo: xebialabs-community/xld-chef-plugin
 notifications:
-  hipchat:
-    rooms:
-      secure: DLIt0iHzhSE1+82L9a6api03BUvBcZQrbpTu3U+ZS12r+rWb/a4m7ojquX8+o5f4UMdPln2Rv+vGggUTi5l4RXNWZ+n8PAb/CQNVmepE1TPyB6DJCXCdTjkIAajD068CadCTtkENMditFj7XGIe94/RI7rVB/nYPnJGbAFKvY68=
+  slack:
+    secure: TZcYkJFegEhPKqnH3e69A/yNIksuY79zuG+zY3G2S5eH6xICDheI6+IXM+SyQoFXsgFwn0KlwyZKcPeqmcuxvhov7/RDoTx+QFpepwbw1hkcjOvvW7GryYZ7ZThoMBxz2lgeIq2UPg6LIktnoAKaDVwwTfqblnrjONKofDBZEUY=
